@@ -1,0 +1,19 @@
+{
+  "name": "asentxia-command",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-command.mjs",
+    "check": "tsc --noEmit",
+    "dev": "node scripts/preview.mjs"
+  },
+  "dependencies": {
+    "three": "^0.186.0",
+    "gsap": "^3.15.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.183.0",
+    "typescript": "^5.9.3",
+    "esbuild": "^0.25.0"
+  }
+}

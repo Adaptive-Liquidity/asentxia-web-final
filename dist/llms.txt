@@ -1,0 +1,4 @@
+# Asentxia Systems
+Asentxia Systems develops Distributed Cognitive Architecture (DCA), a reference architecture for persistent, governed autonomous intelligence. Continuum is the flagship implementation for persistent principals called VERAs (Verifiable Entities with Revocable Authority). The Regency is the governance and organizational product. DCA has seven responsibilities: Environment, State, Authority, Execution, Evidence, Coordination, Cognition Boundary. The Effect Boundary is cross-cutting and not an eighth responsibility.
+
+Current launch evidence is bounded to a documented same-host process-restart Continuum slice; it does not establish host migration, universal provider substitution, complete DCA conformance, production readiness, or cryptographic verification. Exact public demo/P00-P01-P03 artifact links are pending publication. See /claims.json and /#evidence.

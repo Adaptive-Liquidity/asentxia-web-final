@@ -1,0 +1,10 @@
+import {build} from 'esbuild';
+import {mkdir,writeFile,copyFile,rm} from 'node:fs/promises';
+await mkdir('dist/command',{recursive:true});
+await rm('dist/command/assets',{recursive:true,force:true});
+const result=await build({entryPoints:['src/command/template.ts'],bundle:true,platform:'node',format:'esm',write:false});
+const {render}=await import('data:text/javascript;base64,'+Buffer.from(result.outputFiles[0].text).toString('base64'));
+await writeFile('dist/command/index.html',render());
+await copyFile('src/command/command.css','dist/command/command.css');
+await build({entryPoints:['src/command/main.ts'],bundle:true,splitting:true,format:'esm',outdir:'dist/command/assets',minify:true,target:'es2022',entryNames:'command',chunkNames:'[name]-[hash]',legalComments:'eof'});
+console.log('Command route built.');

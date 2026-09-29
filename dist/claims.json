@@ -1,0 +1,11 @@
+{
+  "source_of_truth_version": "Asentxia Source of Truth v1, effective 2026-09-27",
+  "claim_id": "CONT-PERSIST-001",
+  "entity": "Continuum",
+  "maturity": "verified — bounded test slice",
+  "statement": "A documented Continuum slice preserves the same Continuum Computer ID and VERA ID across distinct OS processes on the same host, recovers durable state, permits a scoped effect under an active grant, denies the same capability after revocation, performs a mediated post-restart effect, and exposes ordered structured evidence checked by an independent verifier.",
+  "conditions": "Same-host process restart; documented test slice only.",
+  "source": "Asentxia 72-Hour Launch Master Kit v1",
+  "public_artifact_status": "Exact demo/evidence/P00-P01-P03 links pending publication.",
+  "does_not_prove": ["host migration", "universal model/provider substitution", "complete DCA conformance", "production readiness", "cryptographic verification"]
+}
