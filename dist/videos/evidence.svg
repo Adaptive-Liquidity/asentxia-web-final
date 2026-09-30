@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496" role="img" aria-label="Evidence record demonstration poster">
+  <rect width="496" height="496" fill="#111827"/>
+  <g opacity=".35">
+    <circle cx="368" cy="120" r="150" fill="none" stroke="#E2E5EB" stroke-width="1" stroke-dasharray="1 7"/>
+    <circle cx="368" cy="120" r="105" fill="none" stroke="#4C7BF0" stroke-width="1" stroke-dasharray="1 7"/>
+  </g>
+  <g font-family="Inter,system-ui,sans-serif">
+    <text x="48" y="72" fill="#98A2B8" font-size="12" letter-spacing="2.5">ACTIVITY / ATLAS-02</text>
+    <g font-size="13">
+      <rect x="48" y="104" width="400" height="58" rx="10" fill="#141C2D" stroke="#28324A"/>
+      <text x="70" y="130" fill="#98A2B8" font-size="10" letter-spacing="1.5">REC-001</text><text x="70" y="148" fill="#F7F8FA">Action proposed</text>
+      <rect x="48" y="176" width="400" height="58" rx="10" fill="#141C2D" stroke="#28324A"/>
+      <text x="70" y="202" fill="#98A2B8" font-size="10" letter-spacing="1.5">REC-002</text><text x="70" y="220" fill="#F7F8FA">Authority reviewed</text>
+      <rect x="48" y="248" width="400" height="58" rx="10" fill="#141C2D" stroke="#28324A"/>
+      <text x="70" y="274" fill="#98A2B8" font-size="10" letter-spacing="1.5">REC-003</text><text x="70" y="292" fill="#F7F8FA">Effect mediated</text>
+      <rect x="48" y="320" width="400" height="58" rx="10" fill="#12233F" stroke="#24406E"/>
+      <text x="70" y="346" fill="#98A2B8" font-size="10" letter-spacing="1.5">REC-004</text><text x="70" y="364" fill="#F7F8FA">Ordered record <tspan fill="#4C7BF0">✓</tspan></text>
+    </g>
+    <path d="M412 133 V349" stroke="#4C7BF0" stroke-width="1.5" stroke-dasharray="3 5"/>
+    <circle cx="412" cy="133" r="4" fill="#4C7BF0"/><circle cx="412" cy="349" r="4" fill="#4C7BF0"/>
+    <text x="48" y="436" fill="#98A2B8" font-size="11">Every action traces back to its source.</text>
+  </g>
+</svg>

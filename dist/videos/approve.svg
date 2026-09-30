@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496" role="img" aria-label="Approval demonstration poster">
+  <rect width="496" height="496" fill="#111827"/>
+  <g opacity=".35">
+    <circle cx="128" cy="376" r="140" fill="none" stroke="#E2E5EB" stroke-width="1" stroke-dasharray="1 7"/>
+    <circle cx="128" cy="376" r="96" fill="none" stroke="#4C7BF0" stroke-width="1" stroke-dasharray="1 7"/>
+  </g>
+  <g font-family="Inter,system-ui,sans-serif">
+    <text x="48" y="72" fill="#98A2B8" font-size="12" letter-spacing="2.5">APPROVAL / ATLAS-02</text>
+    <rect x="88" y="120" width="320" height="240" rx="14" fill="#141C2D" stroke="#28324A"/>
+    <text x="118" y="162" fill="#98A2B8" font-size="10" letter-spacing="1.5">ACTION / REVIEW</text>
+    <text x="118" y="190" fill="#F7F8FA" font-size="17">Send summary to the team</text>
+    <g font-size="11.5">
+      <text x="118" y="226" fill="#98A2B8">Scope</text><text x="378" y="226" fill="#E2E5EB" text-anchor="end">One email · reviewed</text>
+      <text x="118" y="252" fill="#98A2B8">Computer</text><text x="378" y="252" fill="#E2E5EB" text-anchor="end">atlas-02</text>
+      <text x="118" y="278" fill="#98A2B8">Decision</text><text x="378" y="278" fill="#E2E5EB" text-anchor="end">Waiting for you</text>
+    </g>
+    <rect x="118" y="306" width="122" height="38" rx="19" fill="none" stroke="#28324A"/>
+    <text x="179" y="330" fill="#98A2B8" font-size="12.5" text-anchor="middle">Decline</text>
+    <rect x="256" y="306" width="122" height="38" rx="19" fill="#1D4ED8"/>
+    <text x="317" y="330" fill="#FFFFFF" font-size="12.5" text-anchor="middle">Approve</text>
+    <text x="48" y="436" fill="#98A2B8" font-size="11">Nothing happens without your approval.</text>
+  </g>
+</svg>

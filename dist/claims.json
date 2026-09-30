@@ -1,11 +1,11 @@
 {
   "source_of_truth_version": "Asentxia Source of Truth v1, effective 2026-09-27",
-  "claim_id": "CONT-PERSIST-001",
+  "claim_id": "2A-ADD (Continuum Persistence Slice #2A)",
   "entity": "Continuum",
-  "maturity": "verified — bounded test slice",
-  "statement": "A documented Continuum slice preserves the same Continuum Computer ID and VERA ID across distinct OS processes on the same host, recovers durable state, permits a scoped effect under an active grant, denies the same capability after revocation, performs a mediated post-restart effect, and exposes ordered structured evidence checked by an independent verifier.",
-  "conditions": "Same-host process restart; documented test slice only.",
-  "source": "Asentxia 72-Hour Launch Master Kit v1",
-  "public_artifact_status": "Exact demo/evidence/P00-P01-P03 links pending publication.",
-  "does_not_prove": ["host migration", "universal model/provider substitution", "complete DCA conformance", "production readiness", "cryptographic verification"]
+  "maturity": "Verified (same-host process restart only)",
+  "statement": "In an internal, reproducible test on one host, a second OS process read back the same Continuum Computer ID, VERA ID and stored state written by a first process; a scoped grant allowed one local mediated write after restart; after revocation the same write was denied; an 11-event ordered log is checked by a separate verifier script.",
+  "conditions": "Same-host process restart; internal reproducible test only.",
+  "evidence": "Decision #2A Verified Claims Addendum v1 (2026-09-15); proof branch proof/continuum-persistence-slice-2a; public commit 349899b",
+  "public_artifact_status": "Exact public artifact links pending publication (proof-pin decision O5 open).",
+  "does_not_prove": ["host migration", "model or provider substitution", "crash recovery", "external effects", "complete DCA conformance", "production readiness", "cryptographic verification", "third-party verification"]
 }
