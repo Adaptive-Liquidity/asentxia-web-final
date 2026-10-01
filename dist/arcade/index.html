@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08101d">
+  <meta name="description" content="Relay Raid is a local, wallet-optional arcade demonstration for a Solana-native social-game experiment.">
+  <title>Relay Raid — Asentxia Systems</title>
+  <link rel="icon" href="/favicon.svg">
+  <link rel="stylesheet" href="/arcade/arcade.css">
+  <script type="module" src="/arcade/assets/arcade.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#raid-controls">Skip to relay controls</a>
+  <main class="arcade-shell" data-arcade-root>
+    <header class="arcade-header">
+      <a class="wordmark" href="/">ASENTXIA <span>SYSTEMS</span></a>
+      <p>Arcade relay / local demonstration</p>
+    </header>
+    <section class="raid-intro" aria-labelledby="raid-title">
+      <p class="kicker">Arcade relay / local demonstration</p>
+      <h1 id="raid-title">Route the signal.<br><em>Keep the raid alive.</em></h1>
+      <p>Route a signal through the grid. Match the active beacon, bank stable pulses, and keep the relay online for 90 seconds.</p>
+    </section>
+    <section class="raid-stage" aria-label="Relay Raid game demonstration">
+      <div class="hud" aria-label="Raid status">
+        <div><span>Time</span><strong data-time>90s</strong></div>
+        <div><span>Score</span><strong data-score>0</strong></div>
+        <div><span>Chain</span><strong data-chain>0</strong></div>
+        <div><span>Target</span><strong data-target>North</strong></div>
+      </div>
+      <canvas data-raid-canvas aria-hidden="true"></canvas>
+      <div class="legend" aria-hidden="true"><span class="target-dot"></span>Match the active beacon before routing the pulse</div>
+      <p class="sr-only" aria-live="polite" data-live-status>Relay ready. Route the first pulse.</p>
+    </section>
+    <section id="raid-controls" class="raid-controls" aria-label="Relay controls">
+      <button type="button" data-raid-action="rotate_left">Rotate left <kbd>←</kbd></button>
+      <button type="button" data-raid-action="boost" class="primary">Route pulse <kbd>Space</kbd></button>
+      <button type="button" data-raid-action="rotate_right">Rotate right <kbd>→</kbd></button>
+    </section>
+    <section class="receipt-panel" data-receipt-panel hidden aria-labelledby="receipt-title">
+      <p class="kicker">Round complete</p>
+      <h2 id="receipt-title">Local receipt preview</h2>
+      <dl>
+        <div><dt>Ruleset</dt><dd data-receipt-ruleset></dd></div>
+        <div><dt>Score</dt><dd data-receipt-score></dd></div>
+        <div><dt>Seed</dt><dd data-receipt-seed></dd></div>
+        <div><dt>Preview ID</dt><dd data-receipt-id></dd></div>
+      </dl>
+      <p>Local demo — no wallet, reward, or on-chain claim is required.</p>
+      <div class="receipt-actions">
+        <button type="button" data-raid-restart>Start a new raid</button>
+        <button type="button" data-raid-share>Copy challenge link</button>
+      </div>
+    </section>
+    <aside class="scope-note">
+      <strong>Demonstration boundary.</strong> This local score is not server-attested, on-chain, transferable, or redeemable. Compatible Action metadata lives at <code>/actions.json</code>.
+    </aside>
+  </main>
+</body>
+</html>
