@@ -1,0 +1,6 @@
+[workspace]
+members = ["programs/relay_raid"]
+resolver = "2"
+
+[profile.release]
+overflow-checks = true

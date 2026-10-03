@@ -1,0 +1,16 @@
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+relay_raid = "5sCw7dCGrtqKvbs84UPqvGsBYgmYUruqYADnUUpgCJHH"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "node scripts/verify-anchor-scaffold.mjs"
